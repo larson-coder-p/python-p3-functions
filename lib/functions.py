@@ -1,16 +1,15 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
-def greet_programmer():
-    pass
+import runpy
 
-def greet(name):
-    pass
+class TestAssertionError:
+    '''
+    an_assertion_error.py
+    '''
 
-def greet_with_default(name="programmer"):
-    pass
+    def test_assertion_error(self):
+        '''
+        evaluates two equal values
+        '''
 
-def add(num1, num2):
-    pass
-
-def halve(number):
-    pass
+        runpy.run_path('lib/an_assertion_error.py')
